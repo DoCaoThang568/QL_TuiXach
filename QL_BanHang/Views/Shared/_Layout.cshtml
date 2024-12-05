@@ -1,0 +1,248 @@
+﻿@using QL_BanHang.Extensions
+@{
+    KhachHang kh = null;
+    if (Context.Session.Get<KhachHang>("user") != null)
+    {
+        kh = Context.Session.Get<KhachHang>("user");
+    }
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="img/png" href="~/Images/logoShop.png"/>
+    <title>QUẢN LÝ BÁN HÀNG TÚI XÁCH </title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> QL_BanHangTuiXach</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow mb-3" style="background-color:#5f9ea0">
+            <div class="container">
+                <a class="navbar-brand disabled" asp-area="" asp-controller="Home" asp-action="">
+                <img src="~/Images/logoShop.png" alt="Túi xách" style="height: 41px;width: 73px;"/>
+    </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                 <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark font-weight-bold " asp-area="" asp-controller="Home" asp-action="Index">Trang chủ</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-dark font-weight-bold" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                                Sản phẩm
+                            </a>
+                            <div class="dropdown-menu" id="loai-sp">
+                                <a class="dropdown-item" asp-controller="SanPham" asp-route-theloai="1" asp-action="Index">Action</a>
+                                <a class="dropdown-item" asp-controller="SanPham" asp-route-theloai="1" asp-action="Index">Action</a>
+                                <a class="dropdown-item" asp-controller="SanPham" asp-route-theloai="1" asp-action="Index">Action</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-dark font-weight-bold" asp-area="" asp-controller="Home" asp-action="Contact">Liên hệ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark font-weight-bold" asp-area="" asp-controller="GioHang" asp-action="Index">Giỏ hàng</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                    <ul class="navbar-nav">
+                        <li class="nav-item btn-group">
+                            <button type="button" class="btn btn-secondary" data-toggle="dropdown">
+                                <i class="bi bi-search"></i>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right py-3 py-3">
+                                <form asp-controller="SanPham" asp-action="Search" method="get" class="px-3">
+                                    <div class="input-group is-invalid">
+                                        <div class="custom-file">
+                                            <input type="search" style="width: 300px;" class="form-control" name="p" required>
+                                        </div>
+                                        <div class="input-group-append">
+                                            <button class="btn btn-outline-secondary" type="submit">
+                                                <i class="bi bi-search"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+                        @*KH not login*@
+                        @if (kh == null)
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark font-weight-bold" asp-area="" asp-controller="Auth" asp-action="Login">Đăng nhập</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark font-weight-bold" asp-area="" asp-controller="Auth" asp-action="SignIn">Đăng Ký</a>
+                            </li>
+                        }
+                        @*Logout*@
+                        else
+                        {
+                    <li class="nav-item dropdown">
+                        <a class="nav-link text-dark" data-toggle="dropdown" href="#">@kh.TenKh</a>
+                     
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <a class="dropdown-item" asp-action="Edit" asp-controller="KhachHang">Chỉnh sửa</a>
+                            <a class="dropdown-item" asp-action="Logout" asp-controller="Auth">Đăng xuất</a>
+                        </div>
+                        
+                    </li>
+                        }
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>   
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+        @*Footer*@
+    
+    <footer>
+        <div class="row">
+            <div class="col-sm-4 border-right" style="background-color: cadetblue">
+                <h5 class="font-weight-bolder">Thông tin liên hệ</h5>
+                <div style="margin-left:10px">
+                    <p class="Contact"> <i class="fa fa-envelope" aria-hidden="true"><a class="text-black-50" href="mailto:bombom45642@gmail.com">bombom45642@gmail.com</a></i> </p>
+                    <p class="Contact">
+                        <i class="fa fa-phone" aria-hidden="true"><a class="text-black-50 " href="tel:+841452635887" style="margin:-15px 0 0;">091452635887</a></i>
+                    </p>
+                    <p>
+                        <i class="fa fa-address-card-o" aria-hidden="true"> 371 Nguyễn Kiệm, Phường 3, Quận Gò Vấp, TP.HCM </i>
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-4 border-right" style="background-color:cadetblue">
+                <h5 class="font-weight-bolder">Fanpage</h5>
+                <p> Fanpage của chúng tôi luôn trực 24/24. Mọi thắc mắc khách hàng có thể liên hệ qua một trong những tài khoản mạng xã hội dưới đây.</p>
+                <p> Hân hạnh!!!</p>
+                <div class="row " style="margin-top:-40px;">
+                    <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+                        <ul class="list-unstyled list-inline social text-center">
+                            <li class="list-inline-item"><a href="https://www.facebook.com/profile.php?id=100068889716736 " ;target="_blank"><i class="fa fa-facebook"></i></a></li>
+                            <li class="list-inline-item"><a href="https://twitter.com/?lang=vi" ; target="_blank"><i class="fa fa-twitter"></i></a></li>
+                            <li class="list-inline-item"><a href="https://www.instagram.com/" ;target="_blank"><i class="fa fa-instagram"></i></a></li>
+                            <li class="list-inline-item"><a href="https://myaccount.google.com/?utm_source=sign_in_no_continue&pli=1" ; target="_blank"><i class="fa fa-google-plus"></i></a></li>
+                            <li class="list-inline-item"><a href="mailto:bombom45642@gmail.com" ; target="_blank"><i class="fa fa-envelope"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4" style="background-color: cadetblue">
+                <h5 class="font-weight-bolder"> Về chúng tôi </h5>
+                <p>
+                    Cửa hàng chúng tôi cung cấp nhiều sản phẩm túi xách, phù hợp với mọi lứa tuổi, theo xu hướng của thị trường.
+                    Hiện tại AAA Shop đang cố gắng từng ngày để hoàn thiện hơn về mặt mẫu mã sản phẩm và dịch vụ chăm sóc khách hàng
+                </p>
+                
+                <div class="justify-content-around">
+                    &copy; 2022 - Quản lý bán hàng Túi xách - AAA SHOP
+                </div>
+            </div>
+        </div>
+    </footer>
+    <style>
+        @@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+        h5 {
+            text-align: center;
+            padding-top: 15px;
+        }
+        ul.social li {
+            padding: 3px 0;
+        }
+
+            ul.social li a i {
+                margin-right: 5px;
+                font-size: 25px;
+                -webkit-transition: .5s all ease;
+                -moz-transition: .5s all ease;
+                transition: .5s all ease;
+            }
+
+            ul.social li:hover a i {
+                font-size: 30px;
+                margin-top: -10px;
+            }
+
+            ul.social li a,
+            ul.quick-links li a {
+                color: #ffffff;
+            }
+
+                ul.social li a:hover {
+                    color: #000;
+                    background-color: cadetblue;
+                }
+
+        ul.quick-links li {
+            padding: 3px 0;
+            -webkit-transition: .5s all ease;
+            -moz-transition: .5s all ease;
+            transition: .5s all ease;
+        }
+
+            ul.quick-links li:hover {
+                padding: 3px 0;
+                margin-left: 5px;
+                font-weight: 700;
+            }
+
+            ul.quick-links li a i {
+                margin-right: 5px;
+            }
+
+            ul.quick-links li:hover a i {
+                font-weight: 700;
+            }
+
+        @@media (max-width:767px) {
+            h5 {
+                padding-left: 0;
+                border-left: transparent;
+                padding-bottom: 0px;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+
+    <!-- ./Footer -->
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script type="text/javascript">
+        $.ajax({
+            method: "get",
+            url: "/san-pham/loai-sp"
+        }).done(function (data) {
+            let values = ""
+            $.each(data, function (key, item) {
+                values += `<a class="dropdown-item" href="/san-pham/${item.maLoaiSp}">${item.tenLoaiSp}</a>`
+            })
+            $("#loai-sp").html(values)
+        })
+    </script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
+

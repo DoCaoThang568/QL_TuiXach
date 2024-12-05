@@ -1,0 +1,262 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\thang\\Desktop\\DoAnMonHoc\\QL_BanHang\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{64587B3B-9A77-49E9-98E0-5EB400FF1F16}|QL_BanHang\\QL_BanHang.csproj|c:\\users\\thang\\desktop\\doanmonhoc\\ql_banhang\\ql_banhang\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64587B3B-9A77-49E9-98E0-5EB400FF1F16}|QL_BanHang\\QL_BanHang.csproj|solutionrelative:ql_banhang\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64587B3B-9A77-49E9-98E0-5EB400FF1F16}|QL_BanHang\\QL_BanHang.csproj|c:\\users\\thang\\desktop\\doanmonhoc\\ql_banhang\\ql_banhang\\controllers\\giohangcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64587B3B-9A77-49E9-98E0-5EB400FF1F16}|QL_BanHang\\QL_BanHang.csproj|solutionrelative:ql_banhang\\controllers\\giohangcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64587B3B-9A77-49E9-98E0-5EB400FF1F16}|QL_BanHang\\QL_BanHang.csproj|c:\\users\\thang\\desktop\\doanmonhoc\\ql_banhang\\ql_banhang\\controllers\\khachhangcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64587B3B-9A77-49E9-98E0-5EB400FF1F16}|QL_BanHang\\QL_BanHang.csproj|solutionrelative:ql_banhang\\controllers\\khachhangcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64587B3B-9A77-49E9-98E0-5EB400FF1F16}|QL_BanHang\\QL_BanHang.csproj|c:\\users\\thang\\desktop\\doanmonhoc\\ql_banhang\\ql_banhang\\controllers\\sanphamcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64587B3B-9A77-49E9-98E0-5EB400FF1F16}|QL_BanHang\\QL_BanHang.csproj|solutionrelative:ql_banhang\\controllers\\sanphamcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64587B3B-9A77-49E9-98E0-5EB400FF1F16}|QL_BanHang\\QL_BanHang.csproj|c:\\users\\thang\\desktop\\doanmonhoc\\ql_banhang\\ql_banhang\\areas\\admin\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{64587B3B-9A77-49E9-98E0-5EB400FF1F16}|QL_BanHang\\QL_BanHang.csproj|solutionrelative:ql_banhang\\areas\\admin\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64587B3B-9A77-49E9-98E0-5EB400FF1F16}|QL_BanHang\\QL_BanHang.csproj|c:\\users\\thang\\desktop\\doanmonhoc\\ql_banhang\\ql_banhang\\areas\\admin\\views\\donhang\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{64587B3B-9A77-49E9-98E0-5EB400FF1F16}|QL_BanHang\\QL_BanHang.csproj|solutionrelative:ql_banhang\\areas\\admin\\views\\donhang\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64587B3B-9A77-49E9-98E0-5EB400FF1F16}|QL_BanHang\\QL_BanHang.csproj|c:\\users\\thang\\desktop\\doanmonhoc\\ql_banhang\\ql_banhang\\areas\\admin\\views\\donhang\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{64587B3B-9A77-49E9-98E0-5EB400FF1F16}|QL_BanHang\\QL_BanHang.csproj|solutionrelative:ql_banhang\\areas\\admin\\views\\donhang\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64587B3B-9A77-49E9-98E0-5EB400FF1F16}|QL_BanHang\\QL_BanHang.csproj|c:\\users\\thang\\desktop\\doanmonhoc\\ql_banhang\\ql_banhang\\areas\\admin\\views\\donhang\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{64587B3B-9A77-49E9-98E0-5EB400FF1F16}|QL_BanHang\\QL_BanHang.csproj|solutionrelative:ql_banhang\\areas\\admin\\views\\donhang\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64587B3B-9A77-49E9-98E0-5EB400FF1F16}|QL_BanHang\\QL_BanHang.csproj|c:\\users\\thang\\desktop\\doanmonhoc\\ql_banhang\\ql_banhang\\areas\\admin\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{64587B3B-9A77-49E9-98E0-5EB400FF1F16}|QL_BanHang\\QL_BanHang.csproj|solutionrelative:ql_banhang\\areas\\admin\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64587B3B-9A77-49E9-98E0-5EB400FF1F16}|QL_BanHang\\QL_BanHang.csproj|c:\\users\\thang\\desktop\\doanmonhoc\\ql_banhang\\ql_banhang\\areas\\admin\\views\\sanpham\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{64587B3B-9A77-49E9-98E0-5EB400FF1F16}|QL_BanHang\\QL_BanHang.csproj|solutionrelative:ql_banhang\\areas\\admin\\views\\sanpham\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64587B3B-9A77-49E9-98E0-5EB400FF1F16}|QL_BanHang\\QL_BanHang.csproj|c:\\users\\thang\\desktop\\doanmonhoc\\ql_banhang\\ql_banhang\\areas\\admin\\views\\sanpham\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{64587B3B-9A77-49E9-98E0-5EB400FF1F16}|QL_BanHang\\QL_BanHang.csproj|solutionrelative:ql_banhang\\areas\\admin\\views\\sanpham\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64587B3B-9A77-49E9-98E0-5EB400FF1F16}|QL_BanHang\\QL_BanHang.csproj|c:\\users\\thang\\desktop\\doanmonhoc\\ql_banhang\\ql_banhang\\areas\\admin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{64587B3B-9A77-49E9-98E0-5EB400FF1F16}|QL_BanHang\\QL_BanHang.csproj|solutionrelative:ql_banhang\\areas\\admin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64587B3B-9A77-49E9-98E0-5EB400FF1F16}|QL_BanHang\\QL_BanHang.csproj|c:\\users\\thang\\desktop\\doanmonhoc\\ql_banhang\\ql_banhang\\areas\\admin\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{64587B3B-9A77-49E9-98E0-5EB400FF1F16}|QL_BanHang\\QL_BanHang.csproj|solutionrelative:ql_banhang\\areas\\admin\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64587B3B-9A77-49E9-98E0-5EB400FF1F16}|QL_BanHang\\QL_BanHang.csproj|c:\\users\\thang\\desktop\\doanmonhoc\\ql_banhang\\ql_banhang\\areas\\admin\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{64587B3B-9A77-49E9-98E0-5EB400FF1F16}|QL_BanHang\\QL_BanHang.csproj|solutionrelative:ql_banhang\\areas\\admin\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 278,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\thang\\Desktop\\DoAnMonHoc\\QL_BanHang\\QL_BanHang\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "QL_BanHang\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\thang\\Desktop\\DoAnMonHoc\\QL_BanHang\\QL_BanHang\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "QL_BanHang\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T18:14:38.674Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GioHangController.cs",
+              "DocumentMoniker": "C:\\Users\\thang\\Desktop\\DoAnMonHoc\\QL_BanHang\\QL_BanHang\\Controllers\\GioHangController.cs",
+              "RelativeDocumentMoniker": "QL_BanHang\\Controllers\\GioHangController.cs",
+              "ToolTip": "C:\\Users\\thang\\Desktop\\DoAnMonHoc\\QL_BanHang\\QL_BanHang\\Controllers\\GioHangController.cs",
+              "RelativeToolTip": "QL_BanHang\\Controllers\\GioHangController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T18:14:36.335Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "KhachHangController.cs",
+              "DocumentMoniker": "C:\\Users\\thang\\Desktop\\DoAnMonHoc\\QL_BanHang\\QL_BanHang\\Controllers\\KhachHangController.cs",
+              "RelativeDocumentMoniker": "QL_BanHang\\Controllers\\KhachHangController.cs",
+              "ToolTip": "C:\\Users\\thang\\Desktop\\DoAnMonHoc\\QL_BanHang\\QL_BanHang\\Controllers\\KhachHangController.cs",
+              "RelativeToolTip": "QL_BanHang\\Controllers\\KhachHangController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T18:14:30.881Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SanPhamController.cs",
+              "DocumentMoniker": "C:\\Users\\thang\\Desktop\\DoAnMonHoc\\QL_BanHang\\QL_BanHang\\Controllers\\SanPhamController.cs",
+              "RelativeDocumentMoniker": "QL_BanHang\\Controllers\\SanPhamController.cs",
+              "ToolTip": "C:\\Users\\thang\\Desktop\\DoAnMonHoc\\QL_BanHang\\QL_BanHang\\Controllers\\SanPhamController.cs",
+              "RelativeToolTip": "QL_BanHang\\Controllers\\SanPhamController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T18:14:25.59Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\thang\\Desktop\\DoAnMonHoc\\QL_BanHang\\QL_BanHang\\Areas\\Admin\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "QL_BanHang\\Areas\\Admin\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\thang\\Desktop\\DoAnMonHoc\\QL_BanHang\\QL_BanHang\\Areas\\Admin\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "QL_BanHang\\Areas\\Admin\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAJAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-05T18:05:00.953Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\thang\\Desktop\\DoAnMonHoc\\QL_BanHang\\QL_BanHang\\Areas\\Admin\\Views\\DonHang\\Index.cshtml",
+              "RelativeDocumentMoniker": "QL_BanHang\\Areas\\Admin\\Views\\DonHang\\Index.cshtml",
+              "ToolTip": "C:\\Users\\thang\\Desktop\\DoAnMonHoc\\QL_BanHang\\QL_BanHang\\Areas\\Admin\\Views\\DonHang\\Index.cshtml",
+              "RelativeToolTip": "QL_BanHang\\Areas\\Admin\\Views\\DonHang\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-05T18:04:53.326Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\thang\\Desktop\\DoAnMonHoc\\QL_BanHang\\QL_BanHang\\Areas\\Admin\\Views\\DonHang\\Edit.cshtml",
+              "RelativeDocumentMoniker": "QL_BanHang\\Areas\\Admin\\Views\\DonHang\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\thang\\Desktop\\DoAnMonHoc\\QL_BanHang\\QL_BanHang\\Areas\\Admin\\Views\\DonHang\\Edit.cshtml",
+              "RelativeToolTip": "QL_BanHang\\Areas\\Admin\\Views\\DonHang\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-05T18:04:49.238Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\thang\\Desktop\\DoAnMonHoc\\QL_BanHang\\QL_BanHang\\Areas\\Admin\\Views\\DonHang\\Create.cshtml",
+              "RelativeDocumentMoniker": "QL_BanHang\\Areas\\Admin\\Views\\DonHang\\Create.cshtml",
+              "ToolTip": "C:\\Users\\thang\\Desktop\\DoAnMonHoc\\QL_BanHang\\QL_BanHang\\Areas\\Admin\\Views\\DonHang\\Create.cshtml",
+              "RelativeToolTip": "QL_BanHang\\Areas\\Admin\\Views\\DonHang\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-05T18:04:32.704Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\thang\\Desktop\\DoAnMonHoc\\QL_BanHang\\QL_BanHang\\Areas\\Admin\\Views\\Auth\\Login.cshtml",
+              "RelativeDocumentMoniker": "QL_BanHang\\Areas\\Admin\\Views\\Auth\\Login.cshtml",
+              "ToolTip": "C:\\Users\\thang\\Desktop\\DoAnMonHoc\\QL_BanHang\\QL_BanHang\\Areas\\Admin\\Views\\Auth\\Login.cshtml",
+              "RelativeToolTip": "QL_BanHang\\Areas\\Admin\\Views\\Auth\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-05T18:04:30.43Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\thang\\Desktop\\DoAnMonHoc\\QL_BanHang\\QL_BanHang\\Areas\\Admin\\Views\\SanPham\\Index.cshtml",
+              "RelativeDocumentMoniker": "QL_BanHang\\Areas\\Admin\\Views\\SanPham\\Index.cshtml",
+              "ToolTip": "C:\\Users\\thang\\Desktop\\DoAnMonHoc\\QL_BanHang\\QL_BanHang\\Areas\\Admin\\Views\\SanPham\\Index.cshtml",
+              "RelativeToolTip": "QL_BanHang\\Areas\\Admin\\Views\\SanPham\\Index.cshtml",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-05T18:04:20.787Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\thang\\Desktop\\DoAnMonHoc\\QL_BanHang\\QL_BanHang\\Areas\\Admin\\Views\\SanPham\\Create.cshtml",
+              "RelativeDocumentMoniker": "QL_BanHang\\Areas\\Admin\\Views\\SanPham\\Create.cshtml",
+              "ToolTip": "C:\\Users\\thang\\Desktop\\DoAnMonHoc\\QL_BanHang\\QL_BanHang\\Areas\\Admin\\Views\\SanPham\\Create.cshtml",
+              "RelativeToolTip": "QL_BanHang\\Areas\\Admin\\Views\\SanPham\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-05T18:04:16.69Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\thang\\Desktop\\DoAnMonHoc\\QL_BanHang\\QL_BanHang\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "QL_BanHang\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\thang\\Desktop\\DoAnMonHoc\\QL_BanHang\\QL_BanHang\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "QL_BanHang\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-05T18:04:03.556Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\thang\\Desktop\\DoAnMonHoc\\QL_BanHang\\QL_BanHang\\Areas\\Admin\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "QL_BanHang\\Areas\\Admin\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\thang\\Desktop\\DoAnMonHoc\\QL_BanHang\\QL_BanHang\\Areas\\Admin\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "QL_BanHang\\Areas\\Admin\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-05T18:03:59.523Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\thang\\Desktop\\DoAnMonHoc\\QL_BanHang\\QL_BanHang\\Areas\\Admin\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "QL_BanHang\\Areas\\Admin\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\thang\\Desktop\\DoAnMonHoc\\QL_BanHang\\QL_BanHang\\Areas\\Admin\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "QL_BanHang\\Areas\\Admin\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-05T18:03:56.164Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

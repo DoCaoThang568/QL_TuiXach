@@ -2,6 +2,13 @@
     var carts = (Cart)ViewBag.Cart;
 }
 <div class="container mt-5">
+    @if (TempData["ErrorMessage"] != null) {/* Thêm đoạn code này vào đây */}
+    {
+    <div class="alert alert-danger" role="alert">
+        @TempData["ErrorMessage"]
+    </div>
+    }
+
     @if (carts != null && carts.Items.Count > 0)
     {
         <table class="table">
@@ -12,6 +19,7 @@
                     <th scope="col">Số Lượng</th>
                     <th scope="col">Đơn Giá</th>
                     <th scope="col">Thành Tiền</th>
+                    <th scope="col">Tồn kho</th>
                     <th scope="col"></th>
                 </tr>
             </thead>
@@ -38,6 +46,7 @@
                         </td>
                         <td>@String.Format("{0:#,###}", @item.sanPham.DonGia)</td>
                         <td id="td_@item.sanPham.MaSp">@tt</td>
+                        <td>@(item.sanPham.SoLuongTon.HasValue ? item.sanPham.SoLuongTon.Value.ToString() : "Hết hàng")</td>
                         <td>
                             <button class="btn btn-danger btn-delete" data-id="@item.sanPham.MaSp">
                                 Delete

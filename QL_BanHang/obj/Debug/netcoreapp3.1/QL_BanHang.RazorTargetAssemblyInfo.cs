@@ -17,7 +17,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyProductAttribute("QL_BanHang")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9dfb0777801b59b8cc2c437880fe7c262d28d0fa")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e07cc3f204d4d842c66edc74f70634a5f605c2c8")]
 [assembly: System.Reflection.AssemblyTitleAttribute("QL_BanHang.Views")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 

@@ -196,3 +196,12 @@ a:hover {
     width: 100%;
     padding-block: 100px;
 }
+
+.user-cart {
+    display: flex;
+    align-items: center;
+}
+
+#cart-link {
+    margin-left: 10px;
+}

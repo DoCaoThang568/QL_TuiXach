@@ -18,6 +18,7 @@ namespace QL_BanHang.Models
         public int? MaNv { get; set; }
         public DateTime? NgayLapHd { get; set; }
         public DateTime? NgayGh { get; set; }
+        public string TrangThai { get; set; }
 
         public virtual KhachHang MaKhNavigation { get; set; }
         public virtual NhanVien MaNvNavigation { get; set; }

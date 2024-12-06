@@ -40,6 +40,7 @@ namespace QL_BanHang.Areas.Admin.Services
                 dh.NgayGh = donHang.NgayGh;
                 dh.NgayLapHd = donHang.NgayLapHd;
                 dh.MaTt = donHang.MaTt;
+                dh.TrangThai = donHang.TrangThai;
                 _context.SaveChanges();
                 return true;
             }

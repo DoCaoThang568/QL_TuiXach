@@ -20,6 +20,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title> QL_BanHangTuiXach</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
 
@@ -33,11 +34,11 @@
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow mb-3" style="background-color:#5f9ea0">
             <div class="container">
                 <a class="navbar-brand disabled" asp-area="" asp-controller="Home" asp-action="">
-                <img src="~/Images/logoShop.png" alt="Túi xách" style="height: 41px;width: 73px;"/>
-    </a>
+                    <img src="~/Images/logoShop.png" alt="Túi xách" style="height: 41px;width: 73px;" />
+                </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
-                 <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
                     <ul class="navbar-nav flex-grow-1">
@@ -49,20 +50,18 @@
                                 Sản phẩm
                             </a>
                             <div class="dropdown-menu" id="loai-sp">
-                                <a class="dropdown-item" asp-controller="SanPham" asp-route-theloai="1" asp-action="Index">Action</a>
-                                <a class="dropdown-item" asp-controller="SanPham" asp-route-theloai="1" asp-action="Index">Action</a>
-                                <a class="dropdown-item" asp-controller="SanPham" asp-route-theloai="1" asp-action="Index">Action</a>
+                                @*sản phẩm*@
                             </div>
                         </li>
 
                         <li class="nav-item">
                             <a class="nav-link text-dark font-weight-bold" asp-area="" asp-controller="Home" asp-action="Contact">Liên hệ</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark font-weight-bold" asp-area="" asp-controller="GioHang" asp-action="Index">Giỏ hàng</a>
-                        </li>
+
                     </ul>
                 </div>
+
+
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
                     <ul class="navbar-nav">
                         <li class="nav-item btn-group">
@@ -84,8 +83,18 @@
                                 </form>
                             </div>
                         </li>
-                        @*KH not login*@
-                        @if (kh == null)
+                        @if (kh != null)
+                        {
+                            <li class="nav-item dropdown user-cart">
+                                <a class="nav-link text-dark" data-toggle="dropdown" href="#">@kh.TenKh</a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a class="dropdown-item" asp-action="Edit" asp-controller="KhachHang">Chỉnh sửa</a>
+                                    <a class="dropdown-item" asp-action="Logout" asp-controller="Auth">Đăng xuất</a>
+                                </div>
+                                <a href="/gio-hang" id="cart-link" class="ml-2"><i class="bi bi-cart"></i><span id="cart-count">(0)</span></a>
+                            </li>
+                        }
+                        else
                         {
                             <li class="nav-item">
                                 <a class="nav-link text-dark font-weight-bold" asp-area="" asp-controller="Auth" asp-action="Login">Đăng nhập</a>
@@ -93,19 +102,6 @@
                             <li class="nav-item">
                                 <a class="nav-link text-dark font-weight-bold" asp-area="" asp-controller="Auth" asp-action="SignIn">Đăng Ký</a>
                             </li>
-                        }
-                        @*Logout*@
-                        else
-                        {
-                    <li class="nav-item dropdown">
-                        <a class="nav-link text-dark" data-toggle="dropdown" href="#">@kh.TenKh</a>
-                     
-                        <div class="dropdown-menu dropdown-menu-right">
-                            <a class="dropdown-item" asp-action="Edit" asp-controller="KhachHang">Chỉnh sửa</a>
-                            <a class="dropdown-item" asp-action="Logout" asp-controller="Auth">Đăng xuất</a>
-                        </div>
-                        
-                    </li>
                         }
                     </ul>
                 </div>
@@ -122,12 +118,12 @@
             <div class="col-sm-4 border-right" style="background-color: cadetblue">
                 <h5 class="font-weight-bolder">Thông tin liên hệ</h5>
                 <div style="margin-left:10px">
-                    <p class="Contact"> <i class="fa fa-envelope" aria-hidden="true"><a class="text-black-50" href="mailto:bombom45642@gmail.com">bombom45642@gmail.com</a></i> </p>
+                    <p class="Contact"> <i class="fa fa-envelope" aria-hidden="true"><a class="text-black-50" href="mailto:aaashoponline@gmail.com">aaashoponline@gmail.com</a></i> </p>
                     <p class="Contact">
                         <i class="fa fa-phone" aria-hidden="true"><a class="text-black-50 " href="tel:+841452635887" style="margin:-15px 0 0;">091452635887</a></i>
                     </p>
                     <p>
-                        <i class="fa fa-address-card-o" aria-hidden="true"> 371 Nguyễn Kiệm, Phường 3, Quận Gò Vấp, TP.HCM </i>
+                        <i class="fa fa-address-card-o" aria-hidden="true"> 140 Lê Trọng Tấn, Phường Tây Thạnh, Quận Tân Phú, TP.HCM </i>
                     </p>
                 </div>
             </div>
@@ -142,7 +138,7 @@
                             <li class="list-inline-item"><a href="https://twitter.com/?lang=vi" ; target="_blank"><i class="fa fa-twitter"></i></a></li>
                             <li class="list-inline-item"><a href="https://www.instagram.com/" ;target="_blank"><i class="fa fa-instagram"></i></a></li>
                             <li class="list-inline-item"><a href="https://myaccount.google.com/?utm_source=sign_in_no_continue&pli=1" ; target="_blank"><i class="fa fa-google-plus"></i></a></li>
-                            <li class="list-inline-item"><a href="mailto:bombom45642@gmail.com" ; target="_blank"><i class="fa fa-envelope"></i></a></li>
+                            <li class="list-inline-item"><a href="mailto:aaashoponline@gmail.com" ; target="_blank"><i class="fa fa-envelope"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -155,7 +151,8 @@
                 </p>
                 
                 <div class="justify-content-around">
-                    &copy; 2022 - Quản lý bán hàng Túi xách - AAA SHOP
+                    © @DateTime.Now.Month/@DateTime.Now.Year - Quản lý bán hàng Túi xách - AAA SHOP
+
                 </div>
             </div>
         </div>
@@ -163,6 +160,14 @@
     <style>
         @@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
+        .user-cart {
+            display: flex;
+            align-items: center;
+        }
+
+        #cart-link {
+            margin-left: 10px;
+        }
         h5 {
             text-align: center;
             padding-top: 15px;

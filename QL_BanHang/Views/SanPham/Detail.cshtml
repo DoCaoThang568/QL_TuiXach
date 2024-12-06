@@ -58,16 +58,16 @@
                 @* Note*@
                 @if (Model.TrangThai == true)
                 {
-                    <a href="#" class="btn btn-primary" id="btn-add-to-cart">
+                    <a href="#" class="btn btn-primary" id="btn-add-to-cart" data-masp="@Model.MaSp">
                         Thêm vào giỏ hàng
-                    </a>                
+                    </a>
                 }
                 else
                 {
-                    <a href="#" class="btn btn-primary disabled" id="btn-add-to-cart">
+                    <a href="#" class="btn btn-primary disabled" id="btn-add-to-cart" data-masp="@Model.MaSp" disabled>
                         Thêm vào giỏ hàng
                     </a>
-                }              
+                }
                 <a asp-controller="Home" asp-action="Index" class="btn btn-secondary ml-2">
                     Quay lại
                 </a>
@@ -115,7 +115,13 @@
 
 @section Scripts{
    <script>
-        $("#btn-add-to-cart").click(function(){
+        $("#btn-add-to-cart").click(function(e){
+            e.preventDefault();
+
+            if ($(this).is(':disabled')) {
+                alert("Sản phẩm đã hết hàng.");
+                return;
+            }
 
             let data = {
                 MaSp: @Model.MaSp,
@@ -131,6 +137,8 @@
                     console.log(data);
                         $("#title-toast").text("Thêm vào giỏ hàng thành công!")
                         $('#liveToast').toast("show")
+
+                        updateCartCount(data);
                 },
             })
         })
